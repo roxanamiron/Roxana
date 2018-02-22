@@ -1,0 +1,5 @@
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Core\bin\Debug\ToDoListBox.Core.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Core\bin\Debug\ToDoListBox.Core.pdb
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Core\obj\Debug\ToDoListBox.Core.csproj.CoreCompileInputs.cache
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Core\obj\Debug\ToDoListBox.Core.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Core\obj\Debug\ToDoListBox.Core.pdb
