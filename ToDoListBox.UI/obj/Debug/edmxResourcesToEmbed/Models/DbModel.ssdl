@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ToDoListBoxModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CategoryToDoList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ToDoListId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="10" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="UpDated" Type="datetime" />
+    <Property Name="DueDate" Type="date" />
+    <Property Name="Completed" Type="bit" />
+  </EntityType>
+  <EntityType Name="ToDoList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="Name" Type="text" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="First Name" Type="varchar" MaxLength="50" />
+    <Property Name="Last Name" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserToDos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="ToDoID" Type="int" />
+  </EntityType>
+  <Association Name="FK_ToDoList_Category ToDoList">
+    <End Role="CategoryToDoList" Type="Self.CategoryToDoList" Multiplicity="0..1" />
+    <End Role="ToDoList" Type="Self.ToDoList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryToDoList">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ToDoList">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToDos_ToDoList">
+    <End Role="ToDoList" Type="Self.ToDoList" Multiplicity="0..1" />
+    <End Role="UserToDos" Type="Self.UserToDos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ToDoList">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserToDos">
+        <PropertyRef Name="ToDoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToDos_UserToDos">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserToDos" Type="Self.UserToDos" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserToDos">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ToDoListBoxModelStoreContainer">
+    <EntitySet Name="CategoryToDoList" EntityType="Self.CategoryToDoList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ToDoList" EntityType="Self.ToDoList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserToDos" EntityType="Self.UserToDos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ToDoList_Category ToDoList" Association="Self.FK_ToDoList_Category ToDoList">
+      <End Role="CategoryToDoList" EntitySet="CategoryToDoList" />
+      <End Role="ToDoList" EntitySet="ToDoList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToDos_ToDoList" Association="Self.FK_UserToDos_ToDoList">
+      <End Role="ToDoList" EntitySet="ToDoList" />
+      <End Role="UserToDos" EntitySet="UserToDos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToDos_UserToDos" Association="Self.FK_UserToDos_UserToDos">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserToDos" EntitySet="UserToDos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,5 +1,12 @@
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\ToDoListBox.Repository.dll
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\ToDoListBox.Repository.pdb
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\Dapper.Contrib.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\Dapper.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\ToDoListBox.Core.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\ToDoListBox.Core.pdb
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\Dapper.xml
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\bin\Debug\Dapper.Contrib.xml
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\obj\Debug\ToDoListBox.Repository.csprojResolveAssemblyReference.cache
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\obj\Debug\ToDoListBox.Repository.csproj.CoreCompileInputs.cache
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\obj\Debug\ToDoListBox.Repository.dll
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.Repository\obj\Debug\ToDoListBox.Repository.pdb

@@ -1,0 +1,80 @@
+﻿@model ToDoListBox.UI.Models.Task.TaskUIModel
+
+@{
+
+    ViewBag.Title = "Create Task";
+}
+
+@Scripts.Render("~/bundles/task")
+
+
+<h2>Create Task</h2>
+@using (Html.BeginForm("Create", "Task", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.ValidationSummary(false)
+    <div class="form-group">
+        <div class="col-sm-4 control-label">
+            @Html.LabelFor(tm => tm.TaskName)
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBoxFor(tm => tm.TaskName, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 control-label">
+            @Html.LabelFor(tm => tm.Description)
+        </div>
+        <div class="col-sm-4">
+            @Html.TextAreaFor(tm => tm.Description, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 control-label">
+            @Html.LabelFor(tm => tm.Priority)
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBoxFor(tm => tm.Priority, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 control-label">
+            @Html.LabelFor(tm => tm.Created)
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBoxFor(tm => tm.Created, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 control-label">
+            @Html.LabelFor(tm => tm.Updated)
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBoxFor(tm => tm.Updated, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 control-label">
+            @Html.LabelFor(tm => tm.DueDate)
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBoxFor(tm => tm.DueDate, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 control-label">
+            @Html.LabelFor(tm => tm.Completed)
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBoxFor(tm => tm.Completed, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4">
+            <button type="button" id="btn_Cancel_Create" class="btn btn-primary" onclick="cancelTaskCreate()">Cancel</button>
+        </div>
+        <div class="col-sm-4">
+            <button type="submit" id="btn_Save_Create" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+}
+

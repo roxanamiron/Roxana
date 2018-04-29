@@ -1,5 +1,16 @@
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\ToDoListBox.BLL.dll
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\ToDoListBox.BLL.pdb
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\AutoMapper.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\ToDoListBox.Core.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\ToDoListBox.Repository.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\Dapper.Contrib.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\Dapper.dll
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\ToDoListBox.Core.pdb
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\ToDoListBox.Repository.pdb
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\AutoMapper.xml
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\Dapper.Contrib.xml
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\bin\Debug\Dapper.xml
+D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\obj\Debug\ToDoListBox.BLL.csprojResolveAssemblyReference.cache
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\obj\Debug\ToDoListBox.BLL.csproj.CoreCompileInputs.cache
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\obj\Debug\ToDoListBox.BLL.dll
 D:\Curs C#.NET\ToDoListBox\Roxana\ToDoListBox.BLL\obj\Debug\ToDoListBox.BLL.pdb
